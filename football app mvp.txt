@@ -14,21 +14,20 @@ Phase 1 Frontend Tasks - Completed:
 - [x] Connect page placeholder added
 
 Phase 1 Backend Tasks - To Do:
-- [ ] Set up backend project (Node.js/Express or NestJS + TypeScript)
-- [ ] Set up database (PostgreSQL or MongoDB) and define models: User, Team, Match, ChatMessage
-- [ ] Implement user registration & login endpoints (bcrypt for password hashing, JWT for auth)
-- [ ] Enforce unique username/email, add basic validation and error handling
-- [ ] Integrate football-data.org (or seed local data) for teams & matches
-- [ ] Create API endpoints: list teams, team details, matches, results
-- [ ] Set up basic real-time chat (Socket.io, global room, store last X messages)
-- [ ] Create profile endpoints: fetch/update user profile (auth required)
+- [ ] Set up backend project (Node.js/Express or NestJS + TypeScript) and connect to Supabase
+- [ ] Set up Supabase database (PostgreSQL) and define tables: User, Team, Match, ChatMessage
+- [ ] Implement user registration & login endpoints using Supabase Auth (Supabase handles password hashing and JWT)
+- [ ] Enforce unique username/email via Supabase constraints, add basic validation and error handling in API
+- [ ] Integrate football-data.org (or seed local data) for teams & matches, store in Supabase tables
+- [ ] Create API endpoints (or use Supabase auto-generated REST endpoints): list teams, team details, matches, results
+- [ ] Set up basic real-time chat (Supabase Realtime or Socket.io, global room, store last X messages in Supabase)
+- [ ] Create profile endpoints: fetch/update user profile (auth required, use Supabase Auth and Row Level Security)
 - [ ] Test all endpoints (Postman/curl) and prepare for front-end integration
 
 Next Steps:
 -----------
-- Begin Phase 1 backend implementation as per checklist above.
+- Begin Phase 1 backend implementation as per checklist above, using Supabase for database, authentication, and real-time features.
 - After backend endpoints are ready, connect and test with frontend.
-
 Technical Notes:
 - Use Node.js/Express + TypeScript for backend (aligns with frontend)
 - Use football-data.org for live football data (free tier, cache responses)
